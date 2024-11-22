@@ -27,3 +27,7 @@ php artisan serve
 | Url     | Description |
 | ---      | ---       |
 | `http://localhost:8000/project` | API project example |
+
+**Prerequisites**
+
+Use header `Accept: application/json` when making request to /project.
