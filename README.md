@@ -2,7 +2,7 @@
     <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="300">
 </p>
 
-# Laravel base app
+# Grebban backend test
 
 This is my grebban backend test repo.
 
@@ -22,8 +22,8 @@ composer install
 php artisan serve
 ```
 
-**Docker services**
+**Services**
 
 | Url     | Description |
 | ---      | ---       |
-| `http://localhost:8000/project` | API example |
+| `http://localhost:8000/project` | API project example |
