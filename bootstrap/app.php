@@ -14,7 +14,7 @@ return Application::configure(basePath: dirname(__DIR__))
         //
     })
     ->withExceptions(function (Exceptions $exceptions) {
-        $exceptions->render(function (Throwable $e) {
+        $exceptions->render(function (ErrorException $e) {
             return response()->json(['error' => 'The input JSON data is inconsitent.']);
         });
     })
