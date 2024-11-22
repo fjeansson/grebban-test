@@ -14,8 +14,8 @@ class ProductController extends Controller
     public function __construct(Request $request)
     {
         # fetch input data
-        $this->products = Http::get('http://localhost:8000/products.json')->collect()->sortBy('name')->toArray();
-        $this->attributes = Http::get('http://localhost:8000/attribute_meta.json')->collect()->keyBy('code')->toArray();
+        $this->products = Http::get('https://draft.grebban.com/backend/products.json')->collect()->sortBy('name')->toArray();
+        $this->attributes = Http::get('https://draft.grebban.com/backend/attribute_meta.json')->collect()->keyBy('code')->toArray();
 
         # merge to request (for validation)
         $request->merge([
